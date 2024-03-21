@@ -3,7 +3,7 @@ name: My First GitHub Actions.
 on:
  push:
   paths:
-   - 'github-cicd/src/main.py'
+   - 'github-cicd/src/**'
 
 jobs:
   build:
