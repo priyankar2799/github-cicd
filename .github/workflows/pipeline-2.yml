@@ -12,14 +12,9 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: '3'
-
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install pytest
-
+        
     - name: Run tests
       run: |
         cd src
-        python -m pytest print.py
+        python print.py
         
